@@ -10,6 +10,7 @@
 		55CB224A22B6EA8200DB60D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB224922B6EA8200DB60D3 /* AppDelegate.swift */; };
 		55CB224C22B6EA8300DB60D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CB224B22B6EA8300DB60D3 /* Assets.xcassets */; };
 		55CB224F22B6EA8300DB60D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CB224D22B6EA8300DB60D3 /* MainMenu.xib */; };
+		55CB225822B6EB0800DB60D3 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB225722B6EB0800DB60D3 /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		55CB224E22B6EA8300DB60D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		55CB225022B6EA8300DB60D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CB225122B6EA8300DB60D3 /* DarkModeSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkModeSwitcher.entitlements; sourceTree = "<group>"; };
+		55CB225722B6EB0800DB60D3 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				55CB224922B6EA8200DB60D3 /* AppDelegate.swift */,
+				55CB225722B6EB0800DB60D3 /* StatusMenuController.swift */,
 				55CB224B22B6EA8300DB60D3 /* Assets.xcassets */,
 				55CB224D22B6EA8300DB60D3 /* MainMenu.xib */,
 				55CB225022B6EA8300DB60D3 /* Info.plist */,
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CB225822B6EB0800DB60D3 /* StatusMenuController.swift in Sources */,
 				55CB224A22B6EA8200DB60D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
