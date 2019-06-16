@@ -22,6 +22,10 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>This script access the Dark Mode from system.</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 NoOrg. All rights reserved.</string>
 	<key>NSMainNibFile</key>

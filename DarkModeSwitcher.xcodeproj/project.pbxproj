@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01323D855EFBCA8E69BCBCF7 /* Pods_DarkModeSwitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45F02D171C97A1637838057 /* Pods_DarkModeSwitcher.framework */; };
 		55CB224A22B6EA8200DB60D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB224922B6EA8200DB60D3 /* AppDelegate.swift */; };
 		55CB224C22B6EA8300DB60D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CB224B22B6EA8300DB60D3 /* Assets.xcassets */; };
 		55CB224F22B6EA8300DB60D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CB224D22B6EA8300DB60D3 /* MainMenu.xib */; };
@@ -21,6 +22,9 @@
 		55CB225022B6EA8300DB60D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CB225122B6EA8300DB60D3 /* DarkModeSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkModeSwitcher.entitlements; sourceTree = "<group>"; };
 		55CB225722B6EB0800DB60D3 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		5D18788C17F69B8FB2640EF8 /* Pods-DarkModeSwitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeSwitcher.release.xcconfig"; path = "Target Support Files/Pods-DarkModeSwitcher/Pods-DarkModeSwitcher.release.xcconfig"; sourceTree = "<group>"; };
+		C45F02D171C97A1637838057 /* Pods_DarkModeSwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkModeSwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73620C2445D3934E3A2F439 /* Pods-DarkModeSwitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeSwitcher.debug.xcconfig"; path = "Target Support Files/Pods-DarkModeSwitcher/Pods-DarkModeSwitcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01323D855EFBCA8E69BCBCF7 /* Pods_DarkModeSwitcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49865D27BD843ACCEA99884E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C45F02D171C97A1637838057 /* Pods_DarkModeSwitcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		55CB223D22B6EA8200DB60D3 = {
 			isa = PBXGroup;
 			children = (
 				55CB224822B6EA8200DB60D3 /* DarkModeSwitcher */,
 				55CB224722B6EA8200DB60D3 /* Products */,
+				9543E95785C95B8825F48C01 /* Pods */,
+				49865D27BD843ACCEA99884E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +78,16 @@
 			path = DarkModeSwitcher;
 			sourceTree = "<group>";
 		};
+		9543E95785C95B8825F48C01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E73620C2445D3934E3A2F439 /* Pods-DarkModeSwitcher.debug.xcconfig */,
+				5D18788C17F69B8FB2640EF8 /* Pods-DarkModeSwitcher.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55CB225422B6EA8300DB60D3 /* Build configuration list for PBXNativeTarget "DarkModeSwitcher" */;
 			buildPhases = (
+				636692E9066357AEECCAACB2 /* [CP] Check Pods Manifest.lock */,
 				55CB224222B6EA8200DB60D3 /* Sources */,
 				55CB224322B6EA8200DB60D3 /* Frameworks */,
 				55CB224422B6EA8200DB60D3 /* Resources */,
+				853B70BA5E042669EE8552EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		636692E9066357AEECCAACB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DarkModeSwitcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853B70BA5E042669EE8552EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DarkModeSwitcher/Pods-DarkModeSwitcher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DarkModeSwitcher/Pods-DarkModeSwitcher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DarkModeSwitcher/Pods-DarkModeSwitcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55CB224222B6EA8200DB60D3 /* Sources */ = {
@@ -269,6 +338,7 @@
 		};
 		55CB225522B6EA8300DB60D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73620C2445D3934E3A2F439 /* Pods-DarkModeSwitcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DarkModeSwitcher/DarkModeSwitcher.entitlements;
@@ -287,6 +357,7 @@
 		};
 		55CB225622B6EA8300DB60D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D18788C17F69B8FB2640EF8 /* Pods-DarkModeSwitcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DarkModeSwitcher/DarkModeSwitcher.entitlements;
